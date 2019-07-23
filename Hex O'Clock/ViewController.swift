@@ -27,26 +27,42 @@ extension NSDate {
 
 class ViewController: UIViewController {
 
+    // MARK: Outlets
     @IBOutlet var hourLabel: UILabel!
 
+    // MARK: Properties
     let currentDate = NSDate()
     var hour: Int!
     var minute: Int?
     var second: Int?
-    var timer = Timer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(showTime), userInfo: nil, repeats: true)
+
+        // Launch timer to refresh every second
+        Timer.scheduledTimer(
+            timeInterval: 1,
+            target: self,
+            selector: #selector(showTime),
+            userInfo: nil,
+            repeats: true)
     }
 
+    // MARK: Update clock UI
     @objc func showTime() {
         guard let hour = currentDate.hour() as Int? else { return }
         guard let minute = currentDate.minute() as Int? else { return }
         guard let second = currentDate.second() as Int? else { return }
 
-        hourLabel.text = "\(hour):\(minute):\(second)"
+        var newSecond: String
+
+        if second < 10 {
+            newSecond = "0\(second)"
+        } else {
+            newSecond = "\(second)"
+        }
+
+        hourLabel.text = "\(hour):\(minute):\(newSecond)"
     }
 }
 
