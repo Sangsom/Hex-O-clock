@@ -33,15 +33,15 @@ class ViewController: UIViewController {
     var hour: Int!
     var minute: Int?
     var second: Int?
+    var timer = Timer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        showTime()
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(showTime), userInfo: nil, repeats: true)
     }
 
-    func showTime() {
-        hour = currentDate.hour()
+    @objc func showTime() {
         guard let hour = currentDate.hour() as Int? else { return }
         guard let minute = currentDate.minute() as Int? else { return }
         guard let second = currentDate.second() as Int? else { return }
