@@ -8,23 +8,6 @@
 
 import UIKit
 
-extension NSDate {
-    func hour() -> Int {
-        let calendar = Calendar.current
-        return calendar.component(.hour, from: Date())
-    }
-
-    func minute() -> Int {
-        let calendar = Calendar.current
-        return calendar.component(.minute, from: Date())
-    }
-
-    func second() -> Int {
-        let calendar = Calendar.current
-        return calendar.component(.second, from: Date())
-    }
-}
-
 class ViewController: UIViewController {
 
     // MARK: Outlets
