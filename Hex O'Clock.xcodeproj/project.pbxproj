@@ -13,6 +13,7 @@
 		1B506E1A22E7825D00C7B87D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B506E1922E7825D00C7B87D /* Assets.xcassets */; };
 		1B506E1D22E7825D00C7B87D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B506E1B22E7825D00C7B87D /* LaunchScreen.storyboard */; };
 		1B506E2522E78FB200C7B87D /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B506E2422E78FB200C7B87D /* DateExtension.swift */; };
+		1B506E2722E792C600C7B87D /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B506E2622E792C600C7B87D /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1B506E1C22E7825D00C7B87D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B506E1E22E7825D00C7B87D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B506E2422E78FB200C7B87D /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		1B506E2622E792C600C7B87D /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				1B506E1222E7825B00C7B87D /* AppDelegate.swift */,
 				1B506E1422E7825B00C7B87D /* ViewController.swift */,
 				1B506E1622E7825B00C7B87D /* Main.storyboard */,
+				1B506E2622E792C600C7B87D /* UIColorExtension.swift */,
 				1B506E1922E7825D00C7B87D /* Assets.xcassets */,
 				1B506E1B22E7825D00C7B87D /* LaunchScreen.storyboard */,
 				1B506E1E22E7825D00C7B87D /* Info.plist */,
@@ -141,6 +144,7 @@
 				1B506E1522E7825B00C7B87D /* ViewController.swift in Sources */,
 				1B506E2522E78FB200C7B87D /* DateExtension.swift in Sources */,
 				1B506E1322E7825B00C7B87D /* AppDelegate.swift in Sources */,
+				1B506E2722E792C600C7B87D /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
