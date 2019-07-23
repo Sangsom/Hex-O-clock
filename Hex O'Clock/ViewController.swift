@@ -28,7 +28,7 @@ extension NSDate {
 class ViewController: UIViewController {
 
     // MARK: Outlets
-    @IBOutlet var hourLabel: UILabel!
+    @IBOutlet var clockLabel: UILabel!
 
     // MARK: Properties
     let currentDate = NSDate()
@@ -62,7 +62,7 @@ class ViewController: UIViewController {
             newSecond = "\(second)"
         }
 
-        hourLabel.text = "\(hour):\(minute):\(newSecond)"
+        clockLabel.text = "\(hour):\(minute):\(newSecond)"
     }
 }
 
