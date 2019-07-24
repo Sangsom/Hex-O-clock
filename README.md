@@ -6,4 +6,4 @@ What's used:
 - UIColor
 - Extensions
 
-Test
+![Hex-O-clock](https://media.giphy.com/media/f9k3MSufF1NkhuSlrZ/giphy.gif)
