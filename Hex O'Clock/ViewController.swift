@@ -12,7 +12,8 @@ class ViewController: UIViewController {
 
     // MARK: Outlets
     @IBOutlet var clockLabel: UILabel!
-
+    @IBOutlet var hexLabel: UILabel!
+    
     // MARK: Properties
     let currentDate = NSDate()
     var hour: Int!
@@ -40,6 +41,7 @@ class ViewController: UIViewController {
         var formattedSecond: String
         var formattedMinute: String
         var formattedHour: String
+        var hexCode: String
 
         if hour < 10 {
             formattedHour = "0\(hour)"
@@ -59,8 +61,11 @@ class ViewController: UIViewController {
             formattedSecond = "\(second)"
         }
 
+        hexCode = "#\(formattedHour)\(formattedMinute)\(formattedSecond)"
+
         clockLabel.text = "\(formattedHour):\(formattedMinute):\(formattedSecond)"
-        view.backgroundColor = UIColor.init(hex: "#\(formattedHour)\(formattedMinute)\(formattedSecond)ff")
+        hexLabel.text = hexCode
+        view.backgroundColor = UIColor.init(hex: "\(hexCode)ff")
     }
 }
 
